@@ -35,7 +35,7 @@ function App() {
             <PillControl/>
             <main>
                 <header className="screen-reader-text">
-                    <h1 className="h h1">MoonPhase App</h1>
+                    <h1 className="h h1">Weather App v1.0</h1>
                 </header>
                 <div className="clouds"></div>
                 <div className="content-wrap">
