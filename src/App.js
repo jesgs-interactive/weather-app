@@ -1,5 +1,5 @@
 import './App.scss';
-// import {PillControl} from "./components/controls/PillControl"
+import {PillControl} from "./components/controls/PillControl"
 import {Moon} from "./components/Moon"
 import {DataTableMoon} from "./components/DataTable_Moon"
 import {DataTableSun} from "./components/DataTable_Sun"
@@ -32,17 +32,17 @@ function App() {
 
     return (
         <div className={`body ${dayTime} ${currentWeatherDisplay}`}>
-            {/*<PillControl/>*/}
+            <PillControl/>
             <main>
                 <header className="screen-reader-text">
                     <h1 className="h h1">MoonPhase App</h1>
                 </header>
+                <div className="clouds"></div>
                 <div className="content-wrap">
-                    <Moon />
-                    <div className="clouds"></div>
-                    <CurrentConditions props={currentWeather} />
-                    <DataTableMoon />
-                    <DataTableSun sunTimes={sunTimes} />
+                    <Moon/>
+                    <CurrentConditions props={currentWeather}/>
+                    <DataTableMoon/>
+                    <DataTableSun sunTimes={sunTimes}/>
                 </div>
                 <footer className="ground-pane grass row">
                 </footer>
