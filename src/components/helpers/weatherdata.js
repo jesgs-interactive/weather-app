@@ -17,7 +17,7 @@ export async function getWeatherData(location) {
         lat: latitude,
         lon: longitude,
         units: 'imperial',
-        appid: 'afbb6049b5ba6d3c9ce20a0d66103cf2'
+        appid: ''
     })
 
     const data = await fetch(END_POINT + '?' + params, {
