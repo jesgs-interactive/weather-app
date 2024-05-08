@@ -17,7 +17,7 @@ export async function getWeatherData(location) {
         lat: latitude,
         lon: longitude,
         units: 'imperial',
-        appid: ''
+        appid: process.env.REACT_APP_OPENWEATHER_API
     })
 
     const data = await fetch(END_POINT + '?' + params, {

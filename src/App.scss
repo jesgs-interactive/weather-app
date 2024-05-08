@@ -389,7 +389,7 @@ Columns/Rows
   border-radius: 20px;
   box-sizing: border-box;
   position: relative;
-
+  z-index: 9;
   @media screen and (min-width: 700px){
     width: 480px;
     height: 240px;
