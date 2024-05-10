@@ -1,5 +1,6 @@
 import {getMoonData} from './helpers/moonfx'
 import {getPhaseNames} from "./helpers/moonphases"
+import {toDaysHours} from "./helpers/functions";
 
 export function DataTableMoon() {
 
@@ -15,7 +16,7 @@ export function DataTableMoon() {
                 <strong className="label">Julian Date</strong> <span data-name="julianDate" className="value">{julianDate}</span>
             </li>
             <li>
-                <strong className="label">Moon's Age</strong> <span data-name="synodicAge" className="value">{synodicAge}</span>
+                <strong className="label">Moon's Age</strong> <span data-name="synodicAge" className="value">{toDaysHours(synodicAge)}</span>
             </li>
             <li>
                 <strong className="label">Phase Angle</strong> <span data-name="phaseAngle" className="value">{parser.parseFromString(phaseAngle, 'text/html').body.textContent}</span>

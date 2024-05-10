@@ -10,6 +10,17 @@ main {
   //text-align: center;
 }
 
+.clear-sky {
+  .pill-switch,
+  label[for=pillSwitch] {
+    display: none;
+  }
+
+  .clouds {
+    display: none;
+  }
+}
+
 .pill-switch {
   opacity: 0;
 }
@@ -96,7 +107,7 @@ label {
   position: absolute;
   top: 0;
   z-index: 8;
-  width: 100vw;
+  width: 100%;
   height: 600px;
   -webkit-mask-image: url(images/clouds-02.png);
   -webkit-mask-repeat: repeat-x;
@@ -206,11 +217,8 @@ canvas {
   width: 150px;
   height: 150px;
   transform: rotate(30deg);
-  margin: 0 auto;
+  margin: 0 auto 40px;
   display: block;
-  @media screen and (min-width: 700px) {
-    margin: inherit;
-  }
 }
 
 strong {
@@ -429,7 +437,7 @@ Columns/Rows
   .label {
     padding-right: 1.25rem;
     display: table-cell;
-
+    width: 50%;
     &:after {
       content: ":";
     }

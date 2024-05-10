@@ -35,7 +35,7 @@ export const currentTime = new Date().getTime()
 
 export function getMoonData() {
     return {
-        "synodicAge": toDaysHours(getSynodicPhase()),
+        "synodicAge": getSynodicPhase(),
         "julianDate": getJulianDate().toFixed(4),
         "phaseAngle": toDegrees(getPhaseAngle()),
         "distance": (getDistanceInEarthRadii() * EARTH_RADIUS_MI).toFixed(0).toString() + " mi",
