@@ -1,5 +1,6 @@
 import {
     toDegrees,
+    // eslint-disable-next-line no-unused-vars
     toDaysHours
 } from './functions'
 
@@ -172,6 +173,7 @@ function _normalize(value) {
  * @param {Number} x
  * @returns {int}
  */
+// eslint-disable-next-line no-unused-vars
 function _signum(x) {
     return (Math.abs(x) - x) ? -1 : x > 0;
 }

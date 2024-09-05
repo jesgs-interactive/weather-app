@@ -9,6 +9,7 @@ import {getCurrentConditionsDisplay, getWeatherData} from "./components/helpers/
 import {CurrentConditions} from "./components/CurrentConditions"
 
 function App() {
+    // eslint-disable-next-line no-unused-vars
     const [position, setPosition] = useState({ position: {}})
     const [sunTimes, setSunTimes] = useState({})
     const [dayTime, setDayTime] = useState({})
@@ -51,6 +52,7 @@ function App() {
     );
 }
 
+// eslint-disable-next-line no-unused-vars
 function drawFavion() {
     let link = document.createElement('link'),
         canvas = document.getElementById('currentphase');
