@@ -17,8 +17,9 @@ export const SunData = (sunTimes) => {
 
 export const Loader = () => {
     return (
-        <>
+        <div className="loading-screen">
+            <div className="background"></div>
             <h2>Loading...</h2>
-        </>
+        </div>
     )
 }
